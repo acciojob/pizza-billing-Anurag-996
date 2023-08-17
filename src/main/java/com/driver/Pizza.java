@@ -15,7 +15,7 @@ public class Pizza {
         this.extraCheeseAdded = false;
         this.extraToppingsAdded = false;
         this.takeawayAdded = false;
-        this.bill = "";
+        this.bill = "Base Price Of The Pizza: " + (isVeg ? 300 : 400) + "\n";
         // your code goes here
     }
 
@@ -52,6 +52,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        this.bill += "Total Price: "+this.price+"\n";
         return this.bill;
     }
 }
